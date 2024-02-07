@@ -1,0 +1,9 @@
+Todo:
+    -   Gather tab
+    -   Build tab
+    -   Group tab
+        -   Size (Camp, Colony, City, )
+        -   Pop cap depend Size
+
+Extra stuff:
+    -   Dark mode
