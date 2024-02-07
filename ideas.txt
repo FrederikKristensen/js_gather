@@ -7,3 +7,6 @@ Todo:
 
 Extra stuff:
     -   Dark mode
+    -   Clock
+    -   Image of the camp (change by size)
+        - Can do texts for it like @ or #
