@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gather around</title>
 </head>
 <body>
-    <p id="nStick">1</p>
+    <div id="resourses">
+        <div id="sticks">
+            <p>Sticks: </p><p id="nSticks">0</p>
+        </div>
 
-    <button onclick="increaseNumberFunction()">Click me!</button>
+        <div id="stones">
+            <p>Stones: </p><p id="nStones">0</p>
+        </div>
+
+    </div>
+    
+    <div id="gather">
+        <button onclick="gatherSticks()">Gather sticks</button>
+        <button onclick="gatherStone()">Gather stones</button>
+
+    </div>
     
     <script src="script.js"></script>
 </body>
