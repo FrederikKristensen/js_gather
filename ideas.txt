@@ -1,6 +1,15 @@
 Todo:
+    -   Placement of ui
+        -   Bootstrap?
+    -   Takes time to do stuff (gathering and crafting)
     -   Gather tab
+        -   Water
+    -   Craft tab
+        -   Bucket (for water gathering)
+        -   Bonfire
     -   Build tab
+        -   Housing and upgradeable
+        -   Weapons and upgradeable
     -   Group tab
         -   Size (Camp, Colony, City, )
         -   Pop cap depend Size
@@ -10,3 +19,9 @@ Extra stuff:
     -   Clock
     -   Image of the camp (change by size)
         - Can do texts for it like @ or #
+        -   Map functions?
+            -   Smith 
+            -   Medical
+            -   Military general
+            -   Cook
+    -   More colouring?

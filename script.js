@@ -1,12 +1,15 @@
-
-// Upgrades
-var basket = false
+// Variables
+var basket = false;
 
 // Random function
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
+// Craft functions
+function craftBasket() {
+    basket = true;
+}
 
 // Gather Functions
 function gatherSticks(vSticks) {
