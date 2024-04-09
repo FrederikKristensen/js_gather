@@ -1,0 +1,13 @@
+body {
+    /* Actual back ground color */
+    background-color: aqua;
+    /* Text color */
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+

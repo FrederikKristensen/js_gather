@@ -1,8 +1,10 @@
 Todo:
     -   Placement of ui
         -   Bootstrap?
-    -   Takes time to do stuff (gathering and crafting)
+    -   Takes time to do stuff (gathering and crafting) WIP
     -   Gather tab
+        -   Stick 3 - 5 random
+            -   With basket done do 13 - 15 
         -   Water
     -   Craft tab
         -   Bucket (for water gathering)
@@ -13,10 +15,11 @@ Todo:
     -   Group tab
         -   Size (Camp, Colony, City, )
         -   Pop cap depend Size
+    -   Save and reload game state (JSON/GSON)
 
 Extra stuff:
-    -   Dark mode
-    -   Clock
+    -   Dark mode ✔
+    -   Clock ✔
     -   Image of the camp (change by size)
         - Can do texts for it like @ or #
         -   Map functions?

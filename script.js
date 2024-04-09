@@ -1,18 +1,48 @@
-// Variables
-var basket = false;
-
-// Random function
+// Random 
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-// Craft functions
+// Dark mode 
+function darkmode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+
+// Clock 
+function startClock() {
+    const today = new Date();
+    // Getting the timers
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    
+    // Changing in html
+    document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+    setTimeout(startClock, 1000);
+}
+
+// Puts a 0 infront of the number in clock if needed
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+}
+
+// Cooldown on buttons              WIP 
+document.getElementById('cooldown')
+
+// Variables
+var basket = false;
+
+// Crafting
 function craftBasket() {
     basket = true;
 }
 
-// Gather Functions
-function gatherSticks(vSticks) {
+// Gathering
+async function gatherSticks(vSticks) {
     var element = document.getElementById('nSticks');
     var vSticks = element.innerHTML;
 
@@ -25,6 +55,18 @@ function gatherSticks(vSticks) {
     console.log('Sticks: ' + vSticks);
     document.getElementById('nSticks').innerHTML = vSticks;
     
+    // Cooldown on the button
+    const button = document.getElementById("gatherSticks");
+    button.disabled = true;
+  
+    await new Promise(res => {
+      setTimeout(() => {
+        res();
+      }, 2000);
+    });
+    
+    button.disabled = false;
+  
 }
 
 function gatherStone(vStones) {
@@ -38,3 +80,4 @@ function gatherStone(vStones) {
     document.getElementById('nStones').innerHTML = vStones;
     
 }
+

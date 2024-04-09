@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Gather around</title>
 </head>
-<body>
+<body onload="startClock()">
+    <button onclick="darkmode()">Click me for dark mode</button>
     <div id="resourses">
         <div id="sticks">
             <p>Sticks: </p><p id="nSticks">0</p>
@@ -18,7 +20,7 @@
     </div>
     
     <div id="gather">
-        <button onclick="gatherSticks()">Gather sticks</button>
+        <button id="gatherSticks" onclick="gatherSticks()">Gather sticks</button>
         <button onclick="gatherStone()">Gather stones</button>
 
     </div>
@@ -27,7 +29,8 @@
         <button onclick="craftBasket()">Craft basket</button>
 
     </div>
-    
+
+    <div id="clock">test</div>
     <script src="script.js"></script>
 </body>
 </html>
