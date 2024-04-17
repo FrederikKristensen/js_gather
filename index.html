@@ -7,30 +7,34 @@
     <title>Gather around</title>
 </head>
 <body onload="startClock()">
-    <button onclick="darkmode()">Click me for dark mode</button>
-    <div id="resourses">
-        <div id="sticks">
-            <p>Sticks: </p><p id="nSticks">0</p>
-        </div>
-
-        <div id="stones">
-            <p>Stones: </p><p id="nStones">0</p>
-        </div>
-
+    <div class="colums">
+        <div class="gather">
+            <button id="gatherSticks" onclick="gatherSticks()">Gather sticks</button>
+            <button id="gatherStones" onclick="gatherStones()">Gather stones</button>
+        
+        </div>    
+        <div class="crafting">
+            <button onclick="craftBasket()">Craft basket</button>
+            
+        </div>    
+        <div class="resourses">
+            <div class="vResourse" id="sticks">
+                <p>Sticks: </p><p id="nSticks">0</p>
+            </div>
+    
+            <div class="vResourse" id="stones">
+                <p>Stones: </p><p id="nStones">0</p>
+            </div>
+            
+        </div>    
     </div>
     
-    <div id="gather">
-        <button id="gatherSticks" onclick="gatherSticks()">Gather sticks</button>
-        <button onclick="gatherStone()">Gather stones</button>
+    <div class="footer">
+        <button onclick="darkmode()">Click me for dark mode</button>
+        <div id="clock">test</div>
 
     </div>
 
-    <div id="craft">
-        <button onclick="craftBasket()">Craft basket</button>
-
-    </div>
-
-    <div id="clock">test</div>
     <script src="script.js"></script>
 </body>
 </html>

@@ -10,4 +10,24 @@ body {
     color: white;
 }
 
+.colums {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+.gather {
+    display: flex;
+    flex-direction: column;
+}
+
+.vResourse {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    
+}

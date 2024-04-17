@@ -47,9 +47,10 @@ async function gatherSticks(vSticks) {
     var vSticks = element.innerHTML;
 
     // Increases stick value
-    ++vSticks;
     if (basket == true) {
-        console.log('yo');
+        vSticks = parseInt(vSticks) + randomInt(8,11);
+    } else {
+        vSticks = parseInt(vSticks) + randomInt(3,6);
     }
 
     console.log('Sticks: ' + vSticks);
@@ -69,15 +70,30 @@ async function gatherSticks(vSticks) {
   
 }
 
-function gatherStone(vStones) {
+async function gatherStones(vStones) {
     var element = document.getElementById('nStones');
     var vStones = element.innerHTML;
 
     // Increases stone value
-    ++vStones;
+    if (basket == true) {
+        vStones = parseInt(vStones) + randomInt(2,5);
+    } else {
+        vStones = parseInt(vStones) + randomInt(4,9);
+    }
 
     console.log('Stones: ' + vStones);
     document.getElementById('nStones').innerHTML = vStones;
     
+    // Cooldown on the button
+    const button = document.getElementById("gatherStones");
+    button.disabled = true;
+  
+    await new Promise(res => {
+      setTimeout(() => {
+        res();
+      }, 2000);
+    });
+    
+    button.disabled = false;
 }
 

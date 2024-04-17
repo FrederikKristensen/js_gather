@@ -1,14 +1,16 @@
 Todo:
     -   Placement of ui
-        -   Bootstrap?
+        -   Css flex boxs ✔
     -   Takes time to do stuff (gathering and crafting) WIP
     -   Gather tab
-        -   Stick 3 - 5 random
-            -   With basket done do 13 - 15 
+        -   Gather 3 - 5 random ✔
+            -   With basket done do 8 - 10 ✔
         -   Water
+        -   Waiting animation on gathering
     -   Craft tab
         -   Bucket (for water gathering)
         -   Bonfire
+        -   Remove button when crafted
     -   Build tab
         -   Housing and upgradeable
         -   Weapons and upgradeable
