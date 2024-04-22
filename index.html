@@ -7,32 +7,56 @@
     <title>Gather around</title>
 </head>
 <body onload="startClock()">
-    <div class="colums">
-        <div class="gather">
-            <button id="gatherSticks" onclick="gatherSticks()">Gather sticks</button>
-            <button id="gatherStones" onclick="gatherStones()">Gather stones</button>
+    <div class="content">
+        <div class="header">
+            <div class="title">
+                <p>Gather around</p>
+            </div>
+    
+            <div class="socials">
+                <a href="https://github.com/FrederikKristensen">Github</a>
+            </div>
+        </div>
+    
+        <div class="colums">
+            <div class="gather">
+                <div class="columTitle">
+                    <p>Gather:</p>
+                </div>
+                <button id="gatherSticks" onclick="gatherSticks()">Gather sticks</button>
+                <button id="gatherStones" onclick="gatherStones()">Gather stones</button>
+            
+            </div>    
+            <div class="crafting">
+                <div class="columTitle">
+                    <p>Crafting:</p>
+                </div>
+                <button onclick="craftBasket()">Craft basket</button>
+                
+            </div>    
+            <div class="resourses">
+                <div class="columTitle">
+                    <p>Resourses:</p>
+                </div>
+    
+                <div class="vResourse" id="sticks">
+                    <p>Sticks: </p>
+                    <p id="nSticks">0</p>
+                </div>
         
-        </div>    
-        <div class="crafting">
-            <button onclick="craftBasket()">Craft basket</button>
-            
-        </div>    
-        <div class="resourses">
-            <div class="vResourse" id="sticks">
-                <p>Sticks: </p><p id="nSticks">0</p>
-            </div>
+                <div class="vResourse" id="stones">
+                    <p>Stones: </p>
+                    <p id="nStones">0</p>
+                </div>
+                
+            </div>    
+        </div>
+        
+        <div class="footer">
+            <button onclick="darkmode()">Click me for dark mode</button>
+            <div id="clock">test</div>
     
-            <div class="vResourse" id="stones">
-                <p>Stones: </p><p id="nStones">0</p>
-            </div>
-            
-        </div>    
-    </div>
-    
-    <div class="footer">
-        <button onclick="darkmode()">Click me for dark mode</button>
-        <div id="clock">test</div>
-
+        </div>
     </div>
 
     <script src="script.js"></script>

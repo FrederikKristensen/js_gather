@@ -5,11 +5,37 @@ body {
     color: black;
 }
 
+/* Dark mode */
 .dark-mode {
     background-color: black;
     color: white;
 }
 
+/* Content */
+/* .content {
+    display: flex;
+    flex-direction: column;
+    
+} */
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    padding-left: 2%;
+    font-size: 200%;
+}
+
+.socials {
+    padding-right: 2%;
+    padding-top: 3%;
+    font-size: 120%;
+}
+
+/* Colums */
 .colums {
     display: flex;
     flex-direction: row;
@@ -29,5 +55,9 @@ body {
 .footer {
     display: flex;
     justify-content: flex-end;
-    
+}
+
+.columTitle {
+    font-size: 120%;
+    font-weight: bold;
 }

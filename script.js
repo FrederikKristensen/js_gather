@@ -30,9 +30,6 @@ function checkTime(i) {
     return i;
 }
 
-// Cooldown on buttons              WIP 
-document.getElementById('cooldown')
-
 // Variables
 var basket = false;
 
@@ -65,9 +62,9 @@ async function gatherSticks(vSticks) {
         res();
       }, 2000);
     });
+
     
     button.disabled = false;
-  
 }
 
 async function gatherStones(vStones) {
