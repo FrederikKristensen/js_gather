@@ -1,7 +1,21 @@
+Working on:
+    -   Upgrade tab
+        -   Show upgrades(dont show upgrades not made)
+        -   Tooltip description
+    -   Design of UI
+        -   Outside focus darker color
+        -   Github dark mode picture
+
 Todo:
-    -   Placement of ui
+    -   Design of UI
         -   Css flex boxs ✔
+        -   Outside focus darker color
+        -   Resourse reallign ✔
+        -   Github dark mode picture
     -   Takes time to do stuff (gathering and crafting) WIP
+    -   Upgrade tab
+        -   Show upgrades(dont show upgrades not made)
+        -   Tooltip description
     -   Gather tab
         -   Gather 3 - 5 random ✔
             -   With basket done do 8 - 10 ✔
