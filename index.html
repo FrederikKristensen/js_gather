@@ -8,65 +8,93 @@
     <title>Gather around</title>
 </head>
 <body onload="startClock()">
-    
-    <div class="row">
-        <div class="col-lg-4">1</div>
-        <div class="col-lg-4">2</div>
-        <div class="col-lg-4">3</div>
-    </div>
-
     <div class="content">
-        <div class="header">
-            <div class="title">
-                <p>Gather around</p>
+        <!-- Header -->
+        <section class="header">
+            <div class="container text-center">
+                <div class="row">
+                    <!-- Title -->
+                    <div class="col-lg-10">
+                        <div class="title">
+                            <p style="font-size: 250%;">Gather around</p>
+                        </div>
+                    </div>
+                    <!-- TODO - Buttons for import/export -->
+                    <!-- Dark mode -->
+                    <div class="col-lg-1">
+                        <div class="darkmodebutton">
+                            <button onclick="darkmode()">Dark mode</button>
+                        </div>
+                    </div>
+                    <!-- Socials -->
+                    <div class="col-lg-1">
+                        <div class="socials">
+                            <a href="https://github.com/FrederikKristensen">
+                                <img src="pic/github-mark.svg" alt="Github link" 
+                                style="width: 60%;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
             
-            <div class="socials">
-                <a href="https://github.com/FrederikKristensen">
-                    <img src="pic/github-mark.svg" alt="Github link" 
-                    style="width: 40%;">
-                </a>
+        <!-- Work tabs -->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-4">
+                    Builder
+                </div>
+                <div class="col-lg-4">
+                    Society
+                </div>
+                <div class="col-lg-4">
+                    Explore
+                </div>
             </div>
         </div>
 
-        <main>
-            <section>
-                <div class="resourses">
-                    <div class="columTitle">
-                        <p>Resourses:</p>
-                    </div>
-                    
-                    <div class="vResourse" id="sticks">
-                        <p>Sticks: </p>
-                        <p id="nSticks">0</p>
-                    </div>
-                    
-                    <div class="vResourse" id="stones">
-                        <p>Stones: </p>
-                        <p id="nStones">0</p>
-                    </div>
-                </div>    
-            </section>
-
-            
-            <div class="colums">
-                <section>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Resourses -->
+                <div class="col-lg-3">
+                    <div class="resourses">
+                        <div class="columTitle">
+                            <p>Resourses:</p>
+                        </div>
+                        
+                        <div class="vResourse" id="sticks">
+                            <p>Sticks: </p>
+                            <p id="nSticks">0</p>
+                        </div>
+                        
+                        <div class="vResourse" id="stones">
+                            <p>Stones: </p>
+                            <p id="nStones">0</p>
+                        </div>
+                    </div>    
+                </div>
+                <!-- Gather -->
+                <div class="col-lg-3">
                     <div class="gather">
                         <div class="columTitle">
                             <p>Gather:</p>
                         </div>
                         <button id="gatherSticks" onclick="gatherSticks()">Gather sticks</button>
                         <button id="gatherStones" onclick="gatherStones()">Gather stones</button>
-                        
                     </div>    
+                </div>
+                <!-- Crafting -->
+                <div class="col-lg-3">
                     <div class="crafting">
                         <div class="columTitle">
                             <p>Crafting:</p>
                         </div>
                         <button onclick="craftBasket()">Craft basket</button>
-                        
-                    </div>   
-                    
+                    </div>  
+                </div>
+                <!-- Upgrades -->
+                <div class="col-lg-3">
                     <div class="Upgrading">
                         <div class="columTitle">
                             <p>Upgrading:</p>
@@ -75,20 +103,25 @@
                             </div>
                             <p>Random</p>
                         </div>
-                        
                     </div> 
-                </section>   
+                </div>
             </div>
-        </main>
-        
-        <div class="footer">
-            <div class="darkmodebutton">
-                <button onclick="darkmode()">Dark mode</button>
-            </div>
-            
-            <div id="clock">test</div>
-        </div>
+        </div>           
     </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-1 mt-2 fixed-bottom">
+        <div class="container text-light text-center">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Clock time of place -->
+                        <div id="clock">test</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <script src="script.js"></script>
 </body>

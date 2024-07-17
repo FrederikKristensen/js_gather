@@ -6,41 +6,38 @@ Working on:
         -   Outside focus darker color
         -   Github dark mode picture
 
-Todo:
-    -   Design of UI
-        -   Css flex boxs ✔
+Ideas:
+    -   Overall website
         -   Outside focus darker color
-        -   Resourse reallign ✔
         -   Github dark mode picture
-    -   Takes time to do stuff (gathering and crafting) WIP
-    -   Upgrade tab
-        -   Show upgrades(dont show upgrades not made)
-        -   Tooltip description
-    -   Gather tab
-        -   Gather 3 - 5 random ✔
-            -   With basket done do 8 - 10 ✔
-        -   Water
-        -   Waiting animation on gathering
-    -   Craft tab
-        -   Bucket (for water gathering)
-        -   Bonfire
-        -   Remove button when crafted
-    -   Build tab
+        -   Dark mode ✔
+        -   Clock ✔
+        -   Move dark mode button to top ✔
+        -   Make dark mode button to a symbol instead
+        -   Save and reload game state (JSON/GSON)
+    -   Builder tab
+        -   Takes time to gather/craft
+        -   Gather 
+            - Gather 3 - 5 random ✔
+                -   With basket done do 8 - 10 ✔
+            -   Water
+        -   Crafting
+            -   Not be able to craft upgrades you have already
+            -   Bucket (for water gathering)
+            -   Bonfire
+        -   Upgrades
+            -   Show upgrades (what we have made)
+            -   Tooltop description
+    -   Society tab
+        -   Size (Camp, Colony, City, )
+            -   Pop (population) cap depends on size
         -   Housing and upgradeable
         -   Weapons and upgradeable
-    -   Group tab
-        -   Size (Camp, Colony, City, )
-        -   Pop cap depend Size
-    -   Save and reload game state (JSON/GSON)
-
-Extra stuff:
-    -   Dark mode ✔
-    -   Clock ✔
-    -   Image of the camp (change by size)
-        - Can do texts for it like @ or #
+        -   Smith 
+        -   Medical
+        -   Military general
+        -   Cook
+        -   Image of the camp (change by size)
+    -   Explore tab
+        -   Can do texts for it like @ or #
         -   Map functions?
-            -   Smith 
-            -   Medical
-            -   Military general
-            -   Cook
-    -   More colouring?
