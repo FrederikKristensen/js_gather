@@ -30,7 +30,7 @@ function checkTime(i) {
     return i;
 }
 
-// Variables
+// Variables - Upgrades
 var basket = false;
 
 // Crafting
@@ -38,21 +38,22 @@ function craftBasket() {
     basket = true;
 }
 
-// Gathering
-async function gatherSticks(vSticks) {
-    var element = document.getElementById('nSticks');
-    var vSticks = element.innerHTML;
+// Resourse values
+let vSticks = 0;
+let vStones = 0
 
+// Gathering
+async function gatherSticks() {
     // Increases stick value
     if (basket == true) {
         vSticks = parseInt(vSticks) + randomInt(8,11);
     } else {
-        vSticks = parseInt(vSticks) + randomInt(3,6);
+        vSticks = parseInt(vSticks) + randomInt(3,6) ;
     }
 
-    console.log('Sticks: ' + vSticks);
-    document.getElementById('nSticks').innerHTML = vSticks;
-    
+    // console.log('Sticks: ' + vSticks);
+    document.getElementById('nSticks').innerHTML = "Sticks: " + String(vSticks);
+
     // Cooldown on the button
     const button = document.getElementById("gatherSticks");
     button.disabled = true;
@@ -63,14 +64,10 @@ async function gatherSticks(vSticks) {
       }, 2000);
     });
 
-    
     button.disabled = false;
 }
 
-async function gatherStones(vStones) {
-    var element = document.getElementById('nStones');
-    var vStones = element.innerHTML;
-
+async function gatherStones() {
     // Increases stone value
     if (basket == true) {
         vStones = parseInt(vStones) + randomInt(2,5);
@@ -78,8 +75,8 @@ async function gatherStones(vStones) {
         vStones = parseInt(vStones) + randomInt(4,9);
     }
 
-    console.log('Stones: ' + vStones);
-    document.getElementById('nStones').innerHTML = vStones;
+    // console.log('Stones: ' + vStones);
+    document.getElementById('nStones').innerHTML = "Stones: " + vStones;
     
     // Cooldown on the button
     const button = document.getElementById("gatherStones");
@@ -94,3 +91,21 @@ async function gatherStones(vStones) {
     button.disabled = false;
 }
 
+function move() {
+    var elem = document.getElementById("myBar");
+    var width = 0;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+      } else {
+        width++;
+        elem.style.width = width + '%';
+      }
+      
+      if (width >= 100) {
+        elem.style.width = '0%'; 
+      }
+
+    }
+  }

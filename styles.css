@@ -92,3 +92,30 @@ body {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
+
+.bar {
+    background-color: white;
+    text-align: center;
+    position: relative;
+}
+
+.bar button {
+    position: absolute;
+    width: 10%;
+    left: 50%;
+    right: 50%;
+    padding: 0;
+}
+
+.bar p {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+}
+
+.bar2 {
+    background-color: grey;
+    width: 0%;
+    height: 24px;
+}
